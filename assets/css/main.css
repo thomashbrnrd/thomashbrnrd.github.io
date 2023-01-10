@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Space+Grotesk:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #__nuxt {
+    min-height: 100%;
+  }
+
+  body {
+    @apply font-sans text-slatewarm-900;
+    background:
+      radial-gradient(circle at 12% 18%, #e8dfd0 0, #f6f3ea 28%, transparent 45%),
+      radial-gradient(circle at 88% 90%, #f0ddcd 0, #f6f3ea 30%, transparent 50%), #f6f3ea;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-3xl border border-sand-200 bg-white/90 shadow-card backdrop-blur;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-ember-500 px-4 py-2 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-ember-600;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-sand-200 px-4 py-2 font-semibold text-slatewarm-900 transition hover:-translate-y-0.5 hover:bg-sand-50;
+  }
+}
