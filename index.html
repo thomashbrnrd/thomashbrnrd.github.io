@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Thomas Bernard | Lead Dev Fullstack / DevOps</title>
+    <title>Thomas Bernard | Freelance Lead Dev Fullstack / DevOps</title>
     <meta
       name="description"
-      content="Profil, compétences et CV de Thomas Bernard, Lead Dev Fullstack / DevOps orienté backend (Django, FastAPI, NestJS)."
+      content="Thomas Bernard, freelance Lead Dev Fullstack / DevOps orienté backend. Expertise Django, FastAPI, NestJS, Docker, Kubernetes et CI/CD."
     />
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <style>
@@ -130,6 +130,44 @@
         gap: 0.5rem;
       }
 
+      .mission-grid {
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      .mini-card {
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 1rem;
+        background: #fff;
+      }
+
+      .mini-card h3 {
+        margin: 0 0 0.25rem;
+        font-size: 1.05rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.45rem;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .small {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      @media (min-width: 900px) {
+        .mission-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
       .chip {
         border: 1px solid #dfccb0;
         background: #f7f3ea;
@@ -171,17 +209,31 @@
     <main class="wrap">
       <section class="card hero">
         <div>
-          <p class="tag">Lead Dev Fullstack / DevOps</p>
+          <p class="tag">Freelance Lead Dev Fullstack / DevOps</p>
           <h1>Thomas Bernard</h1>
           <p class="lead">
-            J'accompagne les équipes produit et tech sur des sujets à fort enjeu : architecture
-            backend, qualité logicielle, industrialisation DevOps et delivery continue. Mon
-            positionnement est orienté backend, avec une forte expertise Python/Django, et une
-            capacité à construire aussi en FastAPI ou NestJS selon le contexte.
+            J'interviens en freelance sur des sujets à fort enjeu : architecture backend, conception
+            d'APIs, industrialisation DevOps et montée en qualité d'équipes produit. Mon
+            positionnement est clairement orienté backend, avec une expertise forte sur Django/DRF,
+            FastAPI et NestJS, jusqu'à la mise en production sur des environnements conteneurisés et
+            des pipelines CI/CD robustes.
           </p>
+          <div class="chips">
+            <span class="chip">Freelance</span>
+            <span class="chip">Disponible via Malt</span>
+            <span class="chip">Backend / APIs / DevOps</span>
+            <span class="chip">Basé à Suresnes · Paris</span>
+          </div>
           <div class="actions">
-            <a class="btn btn-primary" href="/cv.pdf" target="_blank" rel="noreferrer"
-              >Voir le CV (PDF)</a
+            <a
+              class="btn btn-primary"
+              href="https://www.malt.fr/profile/thomasbernard5"
+              target="_blank"
+              rel="noreferrer"
+              >Voir mon profil Malt</a
+            >
+            <a class="btn btn-secondary" href="/cv.pdf" target="_blank" rel="noreferrer"
+              >Télécharger mon CV</a
             >
             <a class="btn btn-secondary" href="mailto:thomashbernard@gmail.com">Me contacter</a>
           </div>
@@ -195,16 +247,94 @@
         <h2>Profil</h2>
         <p class="lead" style="margin-bottom: 0.8rem">
           Je prends le lead technique quand le contexte l'exige : cadrage, choix d'architecture,
-          structuration de la roadmap technique et accompagnement de l'équipe jusqu'à la mise en
-          production.
+          structuration de la roadmap technique, réduction de la dette, mise en place de standards
+          de qualité et accompagnement des équipes jusqu'à la mise en production.
         </p>
         <ul>
-          <li>Formation intensive à l'école 42</li>
-          <li>Co-création d'une startup en tant que CTO</li>
-          <li>Alternance Fullstack chez OneRagtime</li>
-          <li>Conception d'APIs robustes, scalables et bien testées</li>
+          <li>Lead Développeur & DevOps au Ministère de l'Intérieur depuis 2023</li>
+          <li>Missions réalisées pour Canal+, la FFF, Learning Planet Institute et Pharnum X</li>
+          <li>Co-création d'une startup en tant que CTO et management de développeurs</li>
+          <li>
+            Conception d'APIs robustes, scalables et bien testées sur des stacks backend modernes
+          </li>
           <li>Mise en place de pratiques DevOps pour accélérer et fiabiliser le delivery</li>
         </ul>
+      </section>
+
+      <section class="card">
+        <h2>Ce que j'apporte</h2>
+        <div class="mission-grid">
+          <article class="mini-card">
+            <p class="eyebrow">Backend & APIs</p>
+            <h3>Django, FastAPI, NestJS</h3>
+            <p class="small">
+              Conception d'APIs REST solides, maintenables et bien testées, pour des produits neufs
+              ou des plateformes déjà en production.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">Lead technique</p>
+            <h3>Cadrage et décisions d'architecture</h3>
+            <p class="small">
+              Je sécurise les choix techniques, j'aligne delivery et qualité, et je fais monter le
+              niveau d'exécution de l'équipe.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">DevOps</p>
+            <h3>Docker, Kubernetes, CI/CD</h3>
+            <p class="small">
+              Industrialisation des déploiements, pipelines fiables, environnements reproductibles
+              et mises en production fluides.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">Reprise d'existant</p>
+            <h3>Dette technique et standards</h3>
+            <p class="small">
+              Audit, remise à niveau, code reviews, tests automatisés et trajectoire d'évolution
+              réaliste pour remettre une base de code sous contrôle.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Missions récentes</h2>
+        <div class="mission-grid">
+          <article class="mini-card">
+            <p class="eyebrow">Ministère de l'Intérieur · Depuis août 2023</p>
+            <h3>Lead Développeur & DevOps</h3>
+            <p class="small">
+              Développement de Basegun, outil de classification d'armes via IA, avec déploiement,
+              hébergement et CI/CD sur GitHub, GitLab, DSO et Cloud Pi.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">Canal+ · Janvier à mai 2023</p>
+            <h3>Développeur Fullstack & DevOps</h3>
+            <p class="small">
+              Développement from scratch d'un outil d'administration interne pour gérer les flux
+              vidéo onboard de Formule 1, avec déploiement sur AWS, EKS, ArgoCD et Terraform.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">FFF · Mai à août 2023</p>
+            <h3>Développeur Fullstack</h3>
+            <p class="small">
+              Renfort produit sur une stack FastAPI, Angular, Azure et Kubernetes, dans un contexte
+              à fortes attentes opérationnelles.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">Pharnum X · Novembre 2021 à avril 2022</p>
+            <h3>Lead Software Developer</h3>
+            <p class="small">
+              Lead technique d'une équipe de 5 développeurs, refonte de la base de code,
+              implémentation d'une CI/CD complète et transition progressive vers des micro-services.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="card">
@@ -212,6 +342,7 @@
         <div class="chips">
           <span class="chip">Lead technique</span>
           <span class="chip">Architecture backend</span>
+          <span class="chip">Freelance</span>
           <span class="chip">Python</span>
           <span class="chip">Django</span>
           <span class="chip">Django REST Framework</span>
@@ -222,6 +353,8 @@
           <span class="chip">Nuxt.js</span>
           <span class="chip">PostgreSQL</span>
           <span class="chip">Docker</span>
+          <span class="chip">Kubernetes</span>
+          <span class="chip">Terraform</span>
           <span class="chip">CI/CD</span>
           <span class="chip">DevOps</span>
         </div>
@@ -241,6 +374,9 @@
       </section>
 
       <footer>
+        <a href="https://www.malt.fr/profile/thomasbernard5" target="_blank" rel="noreferrer"
+          >Malt</a
+        >
         <a href="https://www.linkedin.com/in/thomas-h-bernard/" target="_blank" rel="noreferrer"
           >LinkedIn</a
         >
