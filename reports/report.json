@@ -1,0 +1,69 @@
+{
+  "score": 86,
+  "grade": "A",
+  "estimatation_co2": {
+    "comment": "Pour un total de 10000 visites par mois, ceci correspond à 142km en voiture (Peugeot 208 5P 1.6 BlueHDi FAP (75ch) BVM5)",
+    "commentDetails": {
+      "numberOfVisit": 10000,
+      "value_km": 142,
+      "value": 142,
+      "unit": "km"
+    }
+  },
+  "estimatation_water": {
+    "comment": "Pour un total de 10000 visites par mois, ceci correspond à 3 douches",
+    "commentDetails": {
+      "numberOfVisit": 10000,
+      "value_shower": 3,
+      "value": 3,
+      "unit": "douches"
+    }
+  },
+  "pages": [
+    {
+      "url": "http://127.0.0.1:4173",
+      "ecoIndex": 86,
+      "grade": "A",
+      "greenhouseGasesEmission": 1.28,
+      "waterConsumption": 1.92,
+      "metrics": [
+        {
+          "name": "number_requests",
+          "value": 9,
+          "status": "info",
+          "recommandation": "< 30 requests"
+        },
+        {
+          "name": "page_size",
+          "value": 299,
+          "status": "info",
+          "recommandation": "< 1000kb"
+        },
+        {
+          "name": "Page_complexity",
+          "value": 60,
+          "status": "info",
+          "recommandation": "Between 300 and 500 nodes"
+        }
+      ],
+      "estimatation_co2": {
+        "comment": "Pour un total de 10000 visites par mois, ceci correspond à 142km en voiture (Peugeot 208 5P 1.6 BlueHDi FAP (75ch) BVM5)",
+        "commentDetails": {
+          "numberOfVisit": 10000,
+          "value_km": 142,
+          "value": 142,
+          "unit": "km"
+        }
+      },
+      "estimatation_water": {
+        "comment": "Pour un total de 10000 visites par mois, ceci correspond à 3 douches",
+        "commentDetails": {
+          "numberOfVisit": 10000,
+          "value_shower": 3,
+          "value": 3,
+          "unit": "douches"
+        }
+      }
+    }
+  ]
+}
