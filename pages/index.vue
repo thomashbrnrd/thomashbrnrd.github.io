@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
   title: "Thomas Bernard | CV",
-  description: "CV de Thomas Bernard - Fullstack & API Developer",
+  description: "CV de Thomas Bernard - Développeur Fullstack & API",
   ogTitle: "Thomas Bernard | CV",
-  ogDescription: "Profil, competences et experiences de Thomas Bernard",
+  ogDescription: "Profil, compétences et expériences de Thomas Bernard",
   ogType: "website"
 })
 
@@ -18,10 +18,10 @@ const techStack = [
 ]
 
 const highlights = [
-  "Premier jeu video developpe a 12 ans",
-  "Premier site web vendu a 15 ans",
-  "Parcours a l'ecole 42",
-  "Co-creation d'une startup en tant que CTO",
+  "Premier jeu vidéo développé à 12 ans",
+  "Premier site web vendu à 15 ans",
+  "Formation intensive à l'école 42",
+  "Co-création d'une startup en tant que CTO",
   "Alternance Fullstack chez OneRagtime"
 ]
 </script>
@@ -31,7 +31,7 @@ const highlights = [
     <section class="card grid gap-6 p-6 md:grid-cols-[1.3fr_0.9fr] md:items-center md:p-8">
       <div class="grid gap-4">
         <p class="m-0 text-xs font-bold uppercase tracking-[0.08em] text-ember-500">
-          Developpeur Fullstack
+          Développeur Fullstack
         </p>
         <h1
           class="font-serif text-4xl leading-[0.95] tracking-tight text-slatewarm-900 md:text-6xl"
@@ -39,8 +39,9 @@ const highlights = [
           Thomas Bernard
         </h1>
         <p class="m-0 leading-relaxed text-slatewarm-700">
-          Passionne d'informatique depuis l'enfance, j'accompagne les equipes dans la conception
-          d'APIs robustes et d'interfaces web rapides a livrer.
+          Passionné d'informatique depuis l'enfance, j'accompagne les équipes dans la conception
+          d'APIs robustes et d'interfaces web performantes, avec une approche orientée qualité et
+          time-to-market.
         </p>
         <div class="flex flex-wrap gap-3">
           <a class="btn-primary" href="/cv.pdf" target="_blank" rel="noreferrer"
@@ -61,8 +62,8 @@ const highlights = [
     <section class="card grid gap-4 p-6 md:p-7">
       <h2 class="font-serif text-3xl tracking-tight text-slatewarm-900 md:text-4xl">Profil</h2>
       <p class="m-0 leading-relaxed text-slatewarm-700">
-        Je mets mes competences au service de projets produits avec une approche pragmatique:
-        architecture claire, iteration rapide et mise en production fiable.
+        Je mets mes compétences au service de projets produits avec une approche pragmatique :
+        architecture claire, itération rapide, mise en production fiable et amélioration continue.
       </p>
       <ul class="m-0 grid list-disc gap-1.5 pl-5 text-slatewarm-700">
         <li v-for="item in highlights" :key="item" class="leading-relaxed">{{ item }}</li>
@@ -70,7 +71,9 @@ const highlights = [
     </section>
 
     <section class="card grid gap-4 p-6 md:p-7">
-      <h2 class="font-serif text-3xl tracking-tight text-slatewarm-900 md:text-4xl">Stack</h2>
+      <h2 class="font-serif text-3xl tracking-tight text-slatewarm-900 md:text-4xl">
+        Compétences clés
+      </h2>
       <div class="flex flex-wrap gap-2">
         <span
           v-for="tech in techStack"
@@ -83,7 +86,9 @@ const highlights = [
 
     <section class="card grid gap-3 p-6 md:p-7">
       <h2 class="font-serif text-3xl tracking-tight text-slatewarm-900 md:text-4xl">CV complet</h2>
-      <p class="m-0 text-slatewarm-700">Le PDF est aussi integre ici pour consultation directe.</p>
+      <p class="m-0 text-slatewarm-700">
+        Le PDF est aussi intégré ici pour une consultation directe.
+      </p>
       <object
         data="/cv.pdf"
         type="application/pdf"
@@ -92,7 +97,7 @@ const highlights = [
         <p>
           Votre navigateur ne peut pas afficher le PDF.
           <a href="/cv.pdf" target="_blank" rel="noreferrer" class="text-ember-700 underline"
-            >Telecharger le CV</a
+            >Télécharger le CV</a
           >
         </p>
       </object>
