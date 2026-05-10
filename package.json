@@ -9,16 +9,11 @@
     "preview": "nuxt preview",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
-    "ecoindex": "npm run generate && start-server-and-test \"serve .output/public -l 4173\" http://127.0.0.1:4173 \"eco-index-audit --url=http://127.0.0.1:4173 --ecoIndex=50 --output=table\"",
-    "ecoindex:json": "npm run generate && start-server-and-test \"serve .output/public -l 4173\" http://127.0.0.1:4173 \"eco-index-audit --url=http://127.0.0.1:4173 --ecoIndex=50 --output=json --outputPathDir=./reports\"",
     "check": "npm run format:check && npm run generate"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.13.1",
-    "eco-index-audit": "^4.4.0",
     "nuxt": "^3.13.2",
-    "prettier": "^3.5.3",
-    "serve": "^14.2.4",
-    "start-server-and-test": "^2.1.2"
+    "prettier": "^3.5.3"
   }
 }

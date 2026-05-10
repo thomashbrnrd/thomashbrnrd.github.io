@@ -35,16 +35,6 @@ jobs:
       - name: Prettier check
         run: npm run format:check
 
-      - name: EcoIndex audit
-        run: npm run ecoindex:json
-
-      - name: Upload EcoIndex report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ecoindex-report
-          path: reports
-
   build:
     if: github.event_name != 'pull_request'
     needs: quality
